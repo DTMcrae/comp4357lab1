@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reader</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Reader</h1>
+    <div id="timeDisplay">Last retrieved: never</div>
+    <div id="notesDisplay"></div>
+
+    <a href="../index.html"><button class="btn btn-secondary">Back</button></a>
+
+    <template id="note-template">
+        <div class="row note-container">
+            <div class="col-8">
+                <textarea class="note-textarea" disabled="true"></textarea>
+            </div>
+        </div>
+    </template>
+
+    <script src="../js/notes.js"></script>
+    <script src="../js/reader.js"></script>
+</body>
+
+</html>

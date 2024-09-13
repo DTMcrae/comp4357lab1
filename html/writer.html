@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writer</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+        <h1>Writer</h1>
+        <div id="timeDisplay">Last saved: never</div>
+        <div id="notesDisplay"></div>
+        <button id="addNoteButton" class="btn btn-primary">Add Note</button>
+
+        <br>
+        <a href="../index.html"><button class="btn btn-secondary mt-5">Back</button></a>
+
+        <template id="note-template">
+            <div class="row note-container">
+                <div class="col-6">
+                    <textarea class="form-control note-textarea"></textarea>
+                </div>
+                <div class="col-2 d-flex justify-content-center align-items-center">
+                    <button class="btn remove-btn btn-secondary">Remove</button>
+                </div>
+            </div>
+        </template>
+        
+        <script src="../js/Notes.js"></script>
+        <script src="../js/Writer.js"></script>
+</body>
+
+</html>
