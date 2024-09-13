@@ -37,7 +37,8 @@ document.getElementById("addNoteButton").addEventListener("click", () => {
   Reload();
 });
 
-window.addEventListener("storage",function () {
+document.addEventListener("DOMContentLoaded", () => {
+  window.addEventListener("storage",function () {
     container.ReloadNotes();
     Reload();
   },
@@ -45,3 +46,4 @@ window.addEventListener("storage",function () {
 );
 
 Reload();
+});
